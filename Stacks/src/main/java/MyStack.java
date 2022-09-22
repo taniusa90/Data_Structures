@@ -10,7 +10,9 @@ public class MyStack <T>{
     }
     public void push(T item){
         SNode<T> node=new SNode<T>(item);
-        if (isEmpty()) bottom=top=node;
+        if (isEmpty()){
+            bottom=top=node;
+        }
         else {
             top.next=node;
             top=node;
@@ -21,15 +23,15 @@ public class MyStack <T>{
         return (T) top.value;
     }
     public T pop(){
-        SNode peekNode;
+        SNode <T> peekNode;
         if (isEmpty()) throw new NoSuchElementException();
-        // stack has one element
-        if (top==bottom) {
+
+        if (top==bottom) { // stack has one element
             peekNode=top;
             top=bottom=null;
         } else{// more than one element
             peekNode=top;
-            SNode prev=bottom;
+            SNode<T> prev=bottom;
             while(prev.next!=top){
                 prev=prev.next;
             }
