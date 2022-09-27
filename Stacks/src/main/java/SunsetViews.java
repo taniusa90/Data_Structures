@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Stack;
-
 public class SunsetViews {
     public static void main(String[] args) {
         int[] buildings={3, 5, 4, 4, 3, 1, 3, 2};
@@ -25,7 +24,7 @@ public class SunsetViews {
             stack.push(i);
             i+=step;
         }
-            // now I have a stack with the building indicies that can see sunset
+        // now I have a stack with the building indicies that can see sunset
         if(direction.equalsIgnoreCase("west")) Collections.reverse(stack);
 
         return new ArrayList<Integer>(stack);
