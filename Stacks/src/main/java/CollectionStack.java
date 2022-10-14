@@ -10,5 +10,7 @@ public class CollectionStack {
         System.out.println(cStack.pop());
         System.out.println("peek is: "+ cStack.peek());
 
+
+
     }
 }
