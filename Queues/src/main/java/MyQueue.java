@@ -31,10 +31,11 @@ public class MyQueue <T>{
         if (isEmpty()){
             throw new NoSuchElementException();
         }
+        //for one element in queue
         if (front==back){
             frontNode=front;
             front=back=null;
-        }else {
+        }else {//for more than one element
             frontNode=front;
             front=front.next;
         }
