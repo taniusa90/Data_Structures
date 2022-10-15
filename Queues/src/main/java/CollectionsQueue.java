@@ -20,8 +20,6 @@ public class CollectionsQueue {
         System.out.println(cq.remove());
 
 
-
-
     }
 
 

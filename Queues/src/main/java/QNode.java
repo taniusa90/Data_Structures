@@ -5,5 +5,6 @@ public class QNode <T>{
 
     public QNode(T value) {
         this.value = value;
+
     }
 }
