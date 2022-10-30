@@ -18,7 +18,7 @@ public class CollectionsQueue {
         cq.add(3);
         System.out.println(cq.remove());
         System.out.println(cq.remove());
-
+        TreeMap<Integer, String> hmp=new TreeMap<>();
 
     }
 
