@@ -8,16 +8,16 @@ public class TreeApp {
         }
         VisualizeTree.printTree(tree.root,null,false);
 
-        /*tree.preOrderTraversal(tree.root);
+        tree.preOrderTraversal(tree.root);
         System.out.println();
         System.out.println("In Order Traversal :");
         tree.inOrderTraversal(tree.root);
         System.out.println();
-        System.out.println("Post Order Traversal: ");
+         System.out.println("Post Order Traversal: ");
         tree.postOrderTraversal(tree.root);
         System.out.println();
         System.out.println("Level Order Traversal: ");
-        tree.levelOrderTraversal();*/
+        tree.levelOrderTraversal();
 
         tree.printLeaves(tree.root);
         System.out.println();
