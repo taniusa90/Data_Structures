@@ -107,5 +107,27 @@ public class MyTree {
         if (isLeaf(root)) return 0;
         return 1+ Math.max(height(root.leftChild), height(root.rightChild));
     }
+    public int calculateNodeDepthSums(){
+        return nodeDepthSums(root,0);
+    }
+
+    //Calculate the sum of node depths
+    public int nodeDepthSums(TNode node,int A){
+        if (node==null){
+            return 0;
+        }
+        return A+nodeDepthSums(node.leftChild,A+1)+nodeDepthSums(node.rightChild,A+1);
+    }
+//sum of all nodes
+    public int calculateNodeSums(){
+        return nodeSums(root, root.value);
+    }
+
+    public int nodeSums(TNode node,int sum){
+        if (node==null){
+            return 0;
+        }
+        return sum+nodeSums(node.leftChild,node.value)+nodeSums(node.rightChild,node.value);
+    }
 }
 
